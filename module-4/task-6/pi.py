@@ -7,13 +7,15 @@ except ValueError:
 
 points_in_circle = 0
 
-# ToDo: Moodle haluaa while loop
+i = 0
 
-for i in range(points):
+while i in range(points):
     point = (random.uniform(-1, 1), random.uniform(-1, 1))
 
     if point[0] ** 2 + point[1] ** 2 < 1:
         points_in_circle += 1
+
+    i += 1
 
 pi_approx = 4 * points_in_circle / points
 
